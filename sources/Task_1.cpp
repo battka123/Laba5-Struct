@@ -2,8 +2,7 @@
 
 #include <header.hpp>
 
-void SortByName(std::vector<Student>& students){
-    std::sort(students.begin(), students.end(),
-              [](const Student& i, const Student& j) {
-                return i.Name < j.Name;});
+void SortByName(std::vector<Student>& students) {
+  std::sort(students.begin(), students.end(),
+            [](const Student& i, const Student& j) { return i.Name < j.Name; });
 }
